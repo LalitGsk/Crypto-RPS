@@ -1,0 +1,148 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 15px;
+}
+
+div.container {
+  width: 70%;
+  margin-bottom: 25px;
+}
+
+div.row text-center {
+  color: solid orange;
+}
+
+div.arenabox {
+  margin-top: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  background-color: orange;
+  color: white;
+}
+
+/* ------------------------------------ HEADERS AND TEXT */
+
+h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* ------------------------------------ IMAGES */
+
+img {
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  background-color: white;
+}
+
+img#rock1:hover, img#paper1:hover, img#scissors1:hover {
+  background-color: red !important;
+}
+
+img#rock2:hover, img#paper2:hover, img#scissors2:hover {
+  background-color: blue !important;
+}
+
+/* ------------------------------------ FORMS AND CHAT */
+
+div#chat {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  height: 250px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid orange;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+
+input {
+  margin-left: 2px;
+  padding: 5px;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+
+input#name-input {
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+input#wallet-input {
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+input#add-name {
+  margin-left: 2px;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+}
+
+input#add-wallet {
+  margin-left: 2px;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+}
+
+input#chat-input {
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+input#send-chat {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+}
+
+button {
+  margin: 20px 0px;
+  padding: 5px 10px;
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+}
+
+/* ------------------------------------ MEDIA QUERIES */
+
+/* large devices <1200px */
+@media (max-width: 1199px) { 
+  div.container {
+    width: 75%;
+  }
+}
+
+/* medium devices <992px */
+@media (max-width: 991px) { 
+}
+
+/* small devices <768px */
+@media (max-width: 767px) { 
+}
+
+/* tiny devices < 576px */
+@media (max-width: 575px) { 
+}
