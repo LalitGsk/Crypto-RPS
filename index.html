@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <title>Crypto-RPS: Rock, Paper, Scissors!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png"/>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row text-center"> <!-- intro -->
+        <h1>CRYPTO-RPS: Rock, Paper, Scissors!</h1>
+        <p>Submit your name and wallet address to begin the game. 
+          Select either rock, paper, or scissors when prompted. Your opponent will do the same. 
+          Rock beats scissors, scissors beats paper, and paper beats rock. 
+          Good luck, and have fun!</p>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <form id="name-form">
+              <input type="text" id="name-input" placeholder="Name">
+              <input id="add-name" type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <form id="wallet-form">
+              <input type="text" id="wallet-input" placeholder="Wallet Address">
+              <input id="add-wallet" type="submit" value="START">
+            </form>
+        </div>
+        <h2 id="gametext"></h2>
+      </div> <!-- intro row -->
+
+      <div class="row"> <!-- arena -->
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- player one -->
+          <div class="arenabox">
+            <h2 id="player1">Player 1</h2>
+            <div id="p1select">
+              <img class="rock" id="rock1" alt="rock" src="assets/images/rock.png">
+              <img class="paper" id="paper1" alt="paper" src="assets/images/paper.png">
+              <img class="scissors" id="scissors1" alt="scissors" src="assets/images/scissors.png">
+            </div>
+            <p id="p1score"></p>
+          </div>
+        </div> <!-- player one column -->
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="arenabox" id="middle">
+            <h2 id="result">Waiting on Player 1 and Player 2...</h2>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- player two -->
+          <div class="arenabox">
+            <h2 id="player2">Player 2</h2>
+            <div id="p2select">
+              <img class="rock" id="rock2" alt="rock" src="assets/images/rock.png">
+              <img class="paper" id="paper2" alt="paper" src="assets/images/paper.png">
+              <img class="scissors" id="scissors2" alt="scissors" src="assets/images/scissors.png">
+            </div>
+            <p id="p2score"></p>
+          </div>
+        </div> <!-- player two column -->
+      </div> <!-- arena row -->
+
+      <div class="row text-center"> <!-- chat -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="chat"><b>You can chat with your opponent here!</b></div>
+          <form id="chat-form">
+            <input type="text" id="chat-input"><input id="send-chat" type="submit" value="SEND">
+          </form>
+        </div>
+      </div> <!-- chat row -->
+
+      <div class="row"> <!-- end game -->
+        <button>Quit Game</button>
+      </div> <!-- end game row -->
+    </div> <!-- container -->
+
+    <!-- JAVASCRIPT AND JQUERY -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+    <script src="assets/javascript/rpc-client.js"></script>
+  </body>
+</html>
